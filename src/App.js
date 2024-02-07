@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const user = {
+name: "Pablo Escobar",
+jobTitle: "Drug dealer",
+about:
+"Passionate about web development and creating awesome user experiences.",
+email: "oussamakhaled00@gmail.com",
+phone: "+216 26936143",
+skills: ["Cocaine","HTML", "CSS", "JavaScript", "React"],
+photoURL:
+"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pablo_Escobar_Mug.jpg/260px-Pablo_Escobar_Mug.jpg", // Replace with your photo URL
+};
+
+return (
+<div className="App">
+<header className="App-header">
+<img src={user.photoURL} alt="Profile" />
+<h1>{user.name}</h1>
+<p>{user.jobTitle}</p>
+</header>
+
+<section className="App-content">
+<h2>About Me</h2>
+<p>{user.about}</p>
+
+<h2>Contact Information</h2>
+<ul>
+<li>Email: {user.email}</li>
+<li>Phone: {user.phone}</li>
+</ul>
+
+<h2>Skills</h2>
+<ul>
+{user.skills.map((skill, index) => (
+<li key={index}>{skill}</li>
+))}
+</ul>
+</section>
+</div>
+);
 }
 
 export default App;
