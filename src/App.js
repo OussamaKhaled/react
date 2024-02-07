@@ -17,7 +17,7 @@ photoURL:
 return (
 <div className="App">
 <header className="App-header">
-<img src={user.photoURL} alt="Profile" />
+<img src={user.photoURL} alt="Profile"/>
 <h1>{user.name}</h1>
 <p>{user.jobTitle}</p>
 </header>
