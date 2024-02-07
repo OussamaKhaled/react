@@ -7,8 +7,8 @@ name: "Pablo Escobar",
 jobTitle: "Drug dealer",
 about:
 "Passionate about web development and creating awesome user experiences.",
-email: "oussamakhaled00@gmail.com",
-phone: "+216 26936143",
+email: "pablo@gmail.com",
+phone: "+200 612454",
 skills: ["Cocaine","HTML", "CSS", "JavaScript", "React"],
 photoURL:
 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pablo_Escobar_Mug.jpg/260px-Pablo_Escobar_Mug.jpg", // Replace with your photo URL
